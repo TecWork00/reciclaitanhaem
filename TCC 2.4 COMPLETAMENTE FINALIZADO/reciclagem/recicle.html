@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
+    <link rel="icon" type="image/x-icon" href="../base/logoatt-1.png">
+</head>
+<body>
+    <header>
+        <div class="btn">
+            <button id="home-btn" onclick="window.location.href='../base/index.php';">Inicio</button>
+        </div>
+    </header>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="./imgrec/plastico.jpg" alt="Plástico">
+            <button id="btn-plastico">Plástico</button>
+        </div>
+        <div class="grid-item">
+            <img src="./imgrec/eletronicos-.jpg" alt="Eletrônicos">
+            <button id="btn-eletronicos">Eletrônicos</button>
+        </div>
+        <div class="grid-item">
+            <img src="./imgrec/pilhas.jpg" alt="Pilhas">
+            <button id="btn-pilhas">Pilhas</button>
+        </div>
+        <div class="grid-item">
+             <img src="./imgrec/lata.jpg" alt="Metais">
+            <button id="btn-metais">Metais</button>
+        </div>
+        <!-- Modal para informações sobre Metais -->
+        <div id="modal-metais" class="modal oculto">
+            <div class="modal-conteudo">
+                <span class="fechar" id="fechar-modal-metais">&times;</span>
+                <div id="informacoes-metais" class="informacoes">
+                    <!-- As informações sobre metais serão carregadas aqui -->
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item"> 
+            <img src="./imgrec/2_oil_111.jpg" alt="Óleo">
+            <button id="btn-oleo">Óleo</button>
+        </div>
+        <div class="grid-item">
+    <img src="./imgrec/moveis.jpg" alt="Móveis">
+    <button id="btn-moveis">Móveis</button>
+</div>
+    </div>
+
+    <!-- Modal para informações sobre Plástico -->
+    <div id="modal" class="modal oculto">
+        <div class="modal-conteudo">
+            <span class="fechar" id="fechar-modal">&times;</span>
+            <div id="informacoes" class="informacoes">
+                <!-- As informações do plástico serão carregadas aqui -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contact">
+            <h3>Nosso Contato:<b></h3>
+            tecwork00@gmail.com<b><p>
+            <p>(13)00000-0000</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Responsivo com Linha de Progresso</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../base/logoatt-1.png">
+</head>
+<body>
+    <!-- Carrossel em tela cheia -->
+    <div class="carousel">
+        <!-- Itens do carrossel -->
+        <div class="carousel-item active">
+            <img src="imagem/R.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="imagem/AdobeStock_237199352-min-scaled.jpeg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="imagem/Eco-friendly-nature.jpg" alt="Image 3">
+        </div>
+
+        <!-- Setas de navegação -->
+        <button class="prev">‹</button>
+        <button class="next">›</button>
+
+        <!-- Indicador de progresso com linha cortada -->
+        <div class="carousel-indicators">
+            <div class="progress-line">
+                <div class="progress-segment" data-index="0"></div>
+                <div class="progress-segment" data-index="1"></div>
+                <div class="progress-segment" data-index="2"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

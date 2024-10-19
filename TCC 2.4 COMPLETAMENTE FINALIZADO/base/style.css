@@ -1,0 +1,219 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura total da viewport */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    flex-grow: 1; /* Faz o main ocupar o espaço restante */
+}
+
+.navbar {
+    background-color: #232325;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    color: rgb(33, 226, 75);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 80px;
+}
+
+.navigation a {
+    color: rgb(0, 0, 0);
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.navigation button {
+    margin: 10px;
+    background-color: rgb(48, 233, 48);
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 7px;
+    color: #232325;
+    cursor: pointer;
+}
+
+.navigation button:hover {
+    background-color: #22862f;
+    transition: all .2s;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-icon {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: -10px;
+}
+
+.login-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: -35px;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    color: rgb(248, 248, 248);
+    background: #232325;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+    background: #232325;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: -20px;
+    display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: -20px;
+}
+
+.slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+footer {
+    background-color: #2b2b2b;
+    display: flex;
+    padding: 5px;
+    justify-content: space-between; /* Distribui o conteúdo entre a esquerda e direita */
+    align-items: center;
+    color: rgb(33, 226, 75);
+    position: relative; /* Permite um posicionamento adequado */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; /* Empurra o rodapé para o fundo da página */
+    height: auto; /* Ajusta automaticamente a altura com base no conteúdo */
+}
+
+/* Estilo geral para o container do login */
+.login-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para a box suspensa (menu) */
+.user-menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+/* Estilo dos botões dentro da box */
+.user-menu button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+.user-menu button:hover {
+    background-color: #22862f;
+    color: white; /* Texto branco ao destacar */
+    border-radius: 8px;
+}
+
+/* Estilo para garantir que o ícone de login e o menu suspenso estejam alinhados */
+.icon {
+    position: relative;
+    cursor: pointer;
+}

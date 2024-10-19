@@ -1,0 +1,97 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos a altura total da viewport */
+}
+
+.cab {
+    background-color: #2b2b2b;
+    border: none;
+    padding: 7px 20px;
+    font-size: 15px;
+    height: 89px;
+}
+
+#inicio {
+    margin: 10px;
+    background-color: rgb(48, 233, 48);
+    border: none;
+    width: 100px; /* Largura ajustada para manter ambos os botões do mesmo tamanho */
+    height: 50px;
+    border-radius: 7px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer; /* Adiciona o ponteiro ao passar por cima */
+    transition: all 0.2s; /* Adiciona a transição para hover */
+}
+
+#inicio:hover {
+    background-color: #22862f;
+    transition: all .2s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 250px); /* Altura total menos o cabeçalho e rodapé */
+    padding-top: 55px; /* Compensar altura do cabeçalho */
+    box-sizing: border-box;
+}
+
+#map {
+    width: 76%;
+    height: 90%;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    border-radius: 27px;
+    align-items: center;
+    top:-30px;
+}
+
+footer {
+    background-color: #2b2b2b;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between; /* Distribui o conteúdo entre a esquerda e direita */
+    align-items: center;
+    color: rgb(33, 226, 75);
+    position: relative; /* Permite um posicionamento adequado */
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; /* Empurra o rodapé para o fundo da página */
+    height: auto; /* Ajusta automaticamente a altura com base no conteúdo */
+}
+
+/*BOTAO DO ADD LOCAL MAP*/
+
+#add-map-button {
+    margin-top: -40px;
+    background-color: rgb(48, 233, 48);
+    border: none;
+    width: 150px; /* Largura ajustada para manter ambos os botões do mesmo tamanho */
+    height: 50px;
+    border-radius: 7px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    cursor: pointer; /* Adiciona o ponteiro ao passar por cima */
+    transition: all 0.2s; /* Adiciona a transição para hover */
+    margin-left: 860px;
+}
+
+#add-map-button:hover {
+    background-color: #218838; /* Cor de fundo mais escura ao passar o mouse */
+}

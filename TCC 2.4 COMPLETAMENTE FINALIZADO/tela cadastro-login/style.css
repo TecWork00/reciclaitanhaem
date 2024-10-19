@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.texto{
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(48, 233, 48);
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    height: 45px;
+    width: 340px;
+}
+
+form input:focus {
+    border-color: rgb(48, 233, 48);
+    background-color: #fff;
+}
+
+form button {
+    padding: 10px;
+    background-color: rgb(48, 233, 48);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgb(32, 157, 32);
+}
+
+/* Estilizando a seção de cadastro */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register-link p {
+    color: #333;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: rgb(48, 233, 48);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 14px;
+    }
+}
